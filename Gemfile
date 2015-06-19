@@ -38,6 +38,8 @@ gem 'devise'
 # 画像アップロード
 gem 'paperclip'
 
+gem 'compass-rails', github: "Compass/compass-rails", branch: "master"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
