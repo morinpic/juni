@@ -1,10 +1,12 @@
 @import "compass/reset";
+// @import url(http://fonts.googleapis.com/css?family=Berkshire+Swash);
 
 html {
 	font-size: 16px;
 	font-size: 62.5%;
 	-webkit-text-size-adjust: 100%;
-	font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, sans-serif;
+	// font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, sans-serif;
+	font-family: 'Berkshire Swash', cursive;
 }
 body {
   line-height: 1.6;
