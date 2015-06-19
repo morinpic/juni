@@ -1,0 +1,6 @@
+bucket: 'juni-dev-repo'
+# access_key_id: 'ACCESS_KEY'
+access_key_id: 'AKIAJQOT7LMTJRRQHVSQ'
+# secret_access_key: 'SECRET_ACCESS_KEY'
+secret_access_key: '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'
+s3_host_name: 's3-ap-northeast-1.amazonaws.com'
