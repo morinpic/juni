@@ -4,4 +4,7 @@
   </p>
   <h2><%= p.title %></h2>
   <p><%= p.body %></p>
+  <% p.pictures.each do |pic| %>
+    <%= image_tag pic.image.url("medium") %>
+  <% end %>
 <% end %>
