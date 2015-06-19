@@ -5,7 +5,8 @@
   padding-bottom: 8px;
   font-size: 2rem;
   border-bottom: 4px solid #000;
-  > img { margin: 0 16px -8px; }
+  a { @include inline-block(); }
+  img { margin: 0 16px -8px; }
 }
 .global-header__nav {
   margin-top: 4px;
