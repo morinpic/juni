@@ -54,3 +54,8 @@ group :development, :test do
   gem 'better_errors', '~> 2.1.1'
   gem 'pry-rails'
 end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
