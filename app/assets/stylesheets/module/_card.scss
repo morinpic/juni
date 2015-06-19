@@ -1,0 +1,41 @@
+.card-list {
+  margin: 0 16px;
+  padding-top: 8px;
+  > li {
+    margin-top: 16px;
+  }
+}
+
+.card {
+  width: 100%;
+  transition: background-color .2s linear;
+  &:hover {
+    background-color: #f3f3f3;
+  }
+}
+.card__inner {
+  display: block;
+  @include pie-clearfix();
+}
+.card__body {
+  overflow: hidden;
+}
+.card__img {
+  float: left;
+  margin-right: 16px;
+  > img { display: block; }
+}
+.card__time {
+
+}
+
+.card__title {
+  margin-top: 4px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.card__txt {
+  margin-top: 4px;
+  font-size: 1.4rem;
+}

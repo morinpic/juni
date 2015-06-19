@@ -1,0 +1,13 @@
+.global-header {
+  margin-top: 24px;
+}
+.global-header__heading {
+  padding-bottom: 8px;
+  font-size: 1.4rem;
+  border-bottom: 4px solid #000;
+  > img { margin: 0 16px -8px; }
+}
+.global-header__nav {
+  margin-top: 4px;
+  border-top: 2px solid #000;
+}

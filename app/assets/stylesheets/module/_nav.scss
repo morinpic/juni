@@ -1,0 +1,14 @@
+.global-nav {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  > li {
+    display: table-cell;
+    > a {
+      display: block;
+      font-size: 1.6rem;
+      text-align: center;
+      &:hover { text-decoration: underline; }
+    }
+  }
+}

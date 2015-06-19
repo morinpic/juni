@@ -3,9 +3,9 @@ class Picture < ActiveRecord::Base
 
   has_attached_file :image,
                     :styles => {
-                      :original => '1980x1680>',
-                      :square => '100x100#',
-                      :medium => '300x240>'
+                      :l => '1980x1680>',
+                      :m => '400x400#',
+                      :s => '300x240>'
                     }
                     # S3を使用するときの設定
                     # :storage => :s3,

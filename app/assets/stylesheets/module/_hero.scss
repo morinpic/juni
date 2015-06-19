@@ -1,0 +1,5 @@
+.hero {
+  margin: 16px;
+  height: 200px;
+  @include background-size(cover);
+}

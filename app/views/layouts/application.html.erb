@@ -7,8 +7,27 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <header class="l-header">
+    <div class="global-header">
+      <h1 class="global-header__heading"><%= image_tag 'logo.jpg', width: '100' %>juni interior design &amp; work space</h1>
+      <nav class="global-header__nav">
+        <ul class="global-nav">
+          <li><%= link_to 'interior', '#' %></li>
+          <li><%= link_to 'shops', '#' %></li>
+          <li><%= link_to 'apparel', '#' %></li>
+          <li><%= link_to 'music', '#' %></li>
+          <li><%= link_to 'photo', '#' %></li>
+          <li><%= link_to 'movie', '#' %></li>
+          <li><%= link_to 'other', '#' %></li>
+          <li><%= link_to 'contact', '#' %></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="l-container">
+    <%= yield %>
+  </div>
+  <footer class="l-footer">
+  </footer>
 </body>
 </html>

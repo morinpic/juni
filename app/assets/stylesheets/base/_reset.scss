@@ -1,1 +1,56 @@
 @import "compass/reset";
+
+html {
+	font-size: 16px;
+	font-size: 62.5%;
+	-webkit-text-size-adjust: 100%;
+	font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, sans-serif;
+}
+body {
+  line-height: 1.6;
+	font-size: 1.2rem;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); // ボタンタップ時のハイライトを消す
+	-webkit-overflow-scrolling: touch; //iOS対応
+  word-wrap: break-word;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  &:link { color: #000 }    // 未訪問リンク
+  &:visited { color: #000 } // 訪問済みリンク
+  &:hover { color: #000 }   // マウスカーソルを乗せたリンク
+  &:active { color: #000 }  // 選択したリンク
+}
+/*
+input,
+button,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: transparent;
+  @include appearance(none); // 見た目をリセット
+  @include border-radius(0); // iOS対応
+  border: 0;
+  outline : none;
+  @include box-sizing(border-box);
+}
+input[type="file"] {
+  @include opacity(0);
+}
+textarea {
+  resize: none;
+}
+input[type=radio],
+input[type=checkbox] {
+  display: none;
+}
+iframe {
+  border: none;
+}
+// chromeのオートコンプリート時、背景色が黄色になってしまう対応
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+} */

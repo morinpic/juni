@@ -8,7 +8,7 @@ ActiveAdmin.register Product do
     column "Title", :title
     column "Body", :body
     column "Picture" do |p|
-      image_tag(p.pictures[0].image.url(:medium))
+      image_tag(p.pictures[0].image.url(:m), width: '200')
     end
     actions
   end
@@ -19,8 +19,8 @@ ActiveAdmin.register Product do
       input :body
       has_many :pictures, heading: "Pictures", allow_destroy: true, new_record: true do |u|
         u.input :image, :as => :file, input_html: { accept: 'image/*' },
-        # :hint => u.object.new_record? ? "プロフィール画像を指定して下さい" : u.template.image_tag(u.object.image.url(:medium))
-        :hint => u.object.new_record? ? "" : u.template.image_tag(u.object.image.url(:medium))
+        # :hint => u.object.new_record? ? "プロフィール画像を指定して下さい" : u.template.image_tag(u.object.image.url(:m))
+        :hint => u.object.new_record? ? "" : u.template.image_tag(u.object.image.url(:m))
       end
     end
     actions
@@ -31,7 +31,7 @@ ActiveAdmin.register Product do
       row :title
       row :body
       row :picture do
-        image_tag(product.pictures[0].image.url(:medium))
+        image_tag(product.pictures[0].image.url(:m), width: '200')
       end
     end
   end
