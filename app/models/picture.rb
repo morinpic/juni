@@ -6,7 +6,8 @@ class Picture < ActiveRecord::Base
                       :l => '600x400>',
                       :m => '400x400#',
                       :s => '300x240>'
-                    }
+                    },
+                    :path => ":attachment/:id/:style.:extension"
                     # S3を使用するときの設定
                     # :storage => :s3,
                     # :s3_permissions => :public,
