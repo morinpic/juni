@@ -35,7 +35,7 @@ gem 'devise'
 
 # 画像アップロード
 gem 'paperclip'
-gem 'aws-sdk'
+gem 'aws-sdk', '< 2.0'
 
 gem 'compass-rails', github: "Compass/compass-rails", branch: "master"
 
