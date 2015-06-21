@@ -8,7 +8,7 @@ ActiveAdmin.register Product do
     column "Title", :title
     column "Body", :body
     column "Picture" do |p|
-      image_tag(p.pictures[0].image.url(:m), width: '200')
+      p.pictures[0] ? image_tag(p.pictures[0].image.url(:m), width: '200') : ''
     end
     actions
   end
@@ -31,7 +31,7 @@ ActiveAdmin.register Product do
       row :title
       row :body
       row :picture do
-        image_tag(product.pictures[0].image.url(:m), width: '200')
+        product.pictures[0] ? image_tag(product.pictures[0].image.url(:m), width: '200') : ''
       end
     end
   end
