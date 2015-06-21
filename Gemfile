@@ -52,6 +52,8 @@ group :development, :test do
   gem 'meta_request', '~> 0.3.4'
   gem 'better_errors', '~> 2.1.1'
   gem 'pry-rails'
+  gem 'pry', '~> 0.10'
+  gem 'pry-byebug', '~> 3.1.0'
 end
 
 group :development do
