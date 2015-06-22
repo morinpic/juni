@@ -1,10 +1,11 @@
 ActiveAdmin.register Product do
 
-  permit_params :title, :body, { pictures_attributes: [ :image, :id, :_destroy ] }
+  permit_params :title, :body, :category, { pictures_attributes: [ :image, :id, :_destroy ] }
 
   index do
     selectable_column
     id_column
+    column "Category", :category
     column "Title", :title
     column "Body", :body
     column "Picture" do |p|
@@ -15,6 +16,7 @@ ActiveAdmin.register Product do
 
   form do |f|
     inputs  do
+      input :category, as: :select, collection: ['interior', 'shops', 'apparel', 'music', 'photo', 'movie', 'other']
       input :title
       input :body
       has_many :pictures, heading: "Pictures", allow_destroy: true, new_record: true do |u|
@@ -28,6 +30,7 @@ ActiveAdmin.register Product do
 
   show do |product|
     attributes_table do
+      row :category
       row :title
       row :body
       row :picture do
