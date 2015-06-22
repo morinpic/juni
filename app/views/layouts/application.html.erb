@@ -35,6 +35,10 @@
     <%= yield %>
   </div>
   <footer class="l-footer">
+    <div class="global-footer">
+      <p class="global-footer__copyright">© 2015 Juni, Inc.</p>
+      <%= link_to image_tag('logo-mini.png', width: '25'), root_path, class: 'global-footer__logo' %>
+    </div>
   </footer>
 </body>
 </html>

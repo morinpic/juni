@@ -1,0 +1,17 @@
+.global-footer {
+  position: relative;
+  padding-bottom: 32px;
+  border-top: 2px solid #000;
+  text-align: center;
+}
+.global-footer__copyright {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 16px 0 0 16px;
+  font-size: 1.4rem;
+}
+.global-footer__logo {
+  display: block;
+  margin-top: 16px;
+}
