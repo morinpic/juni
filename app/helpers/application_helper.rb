@@ -1,4 +1,8 @@
 module ApplicationHelper
+  def category_path(str)
+    link_to str, controller: 'products', action: 'index', type: str
+  end
+
   def hero_path(p)
     if p.present?
       # ランダムで画像パスを取得

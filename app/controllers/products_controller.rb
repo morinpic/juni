@@ -1,6 +1,10 @@
 class ProductsController < ApplicationController
   def index
-    @products = Product.all.order('created_at DESC')
+    if params[:type].present?
+      @products = Product.all.where('category = ?', params[:type]).order('created_at DESC')
+    else
+      @products = Product.all.order('created_at DESC')
+    end
   end
 
   def show

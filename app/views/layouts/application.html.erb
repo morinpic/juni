@@ -19,13 +19,13 @@
       </h1>
       <nav class="global-header__nav">
         <ul class="global-nav">
-          <li><%= link_to 'interior', '#' %></li>
-          <li><%= link_to 'shops', '#' %></li>
-          <li><%= link_to 'apparel', '#' %></li>
-          <li><%= link_to 'music', '#' %></li>
-          <li><%= link_to 'photo', '#' %></li>
-          <li><%= link_to 'movie', '#' %></li>
-          <li><%= link_to 'other', '#' %></li>
+          <li><%= category_path(:interior) %></li>
+          <li><%= category_path(:shops) %></li>
+          <li><%= category_path(:apparel) %></li>
+          <li><%= category_path(:music) %></li>
+          <li><%= category_path(:photo) %></li>
+          <li><%= category_path(:movie) %></li>
+          <li><%= category_path(:other) %></li>
           <li><%= link_to 'contact', '#' %></li>
         </ul>
       </nav>
