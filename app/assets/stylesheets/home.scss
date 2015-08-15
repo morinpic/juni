@@ -1,0 +1,81 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body, html {
+  font-family: Osaka, Arial, Helvetica, sans-serif;
+}
+
+.l-container {
+  margin: 0 auto 60px;
+  padding: 0 16px;
+  max-width: 1024px;
+}
+
+.global-header {
+  padding: 15px;
+  background-color: #3e3e3e;
+  .global-header__heading {
+    padding-bottom: 8px;
+    font-size: 2.5rem;
+    color: #fff;
+    border-bottom: 4px solid #fff;
+    a { @include inline-block(); }
+    img { margin: 0 40px -4px 0; }
+  }
+  .global-header__nav {
+    margin-top: 4px;
+    padding: 4px 18px 0;
+    border-top: 2px solid #fff;
+
+  }
+}
+
+.global-nav {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  > li {
+    display: table-cell;
+    > a {
+      display: block;
+      font-size: 2rem;
+      color: #fff;
+      text-align: center;
+      &:hover { text-decoration: none; }
+    }
+  }
+}
+
+.card-list {
+  margin: 8px 0 0;
+  > li {
+    margin-top: 16px;
+  }
+}
+.card {
+  width: 100%;
+  /* transition: background-color .2s linear;
+  &:hover {
+    background-color: #f3f3f3;
+  } */
+  .card__header {
+
+  }
+  .card__body {
+
+  }
+  .card__date {
+    font-size: 1.6rem;
+  }
+  .card__img {
+    display: block;
+    float: none;
+    margin: 0;
+    height: 0;
+    padding-top: 18.2%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>Juni</title>
+  <meta charset="utf-8">
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=1024">
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"> -->
+  <%= stylesheet_link_tag    'application' %>
+  <%= javascript_include_tag 'application' %>
+</head>
+<body>
+  <header class="l-header">
+    <div class="global-header">
+      <h1 class="global-header__heading">
+        <%= image_tag 'logo-header-juni.png', width: '100' %>Japanese Under New Idea interior dsign &amp; work space
+      </h1>
+      <nav class="global-header__nav">
+        <ul class="global-nav">
+          <li><%= category_path(:interior) %></li>
+          <li><%= category_path(:shops) %></li>
+          <li><%= category_path(:apparel) %></li>
+          <li><%= category_path(:music) %></li>
+          <li><%= category_path(:photo) %></li>
+          <li><%= category_path(:movie) %></li>
+          <li><%= category_path(:other) %></li>
+          <li><%= link_to 'contact', '#' %></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="l-container">
+    <%= yield %>
+  </div>
+  <% if false %>
+  <footer class="l-footer">
+    <div class="global-footer">
+      <p class="global-footer__copyright">© 2015 Juni, Inc.</p>
+      <%= link_to image_tag('logo-mini.png', width: '25'), root_path, class: 'global-footer__logo' %>
+    </div>
+  </footer>
+  <% end %>
+</body>
+</html>
