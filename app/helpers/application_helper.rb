@@ -1,6 +1,7 @@
 module ApplicationHelper
   def category_path(str)
-    link_to str, controller: 'products', action: 'index', type: str
+    # link_to str, controller: 'products', action: 'index', type: str
+    link_to str, '#'
   end
 
   def hero_path(p)
